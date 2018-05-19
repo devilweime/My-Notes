@@ -1,0 +1,6 @@
+傲基客户端
+http://192.168.88.244:18080/passport/login?redirecturl=http%3A%2F%2F192.168.88.244%3A18080%2Fpackage%2Fwaitingprocess%2Fmypackage%2Findex 
+
+傲基运维端
+http://192.168.88.244:28080/passport/login?redirecturl=http%3A%2F%2F192.168.88.244%3A28080%2Foverview
+账号密码：admin1 12345678

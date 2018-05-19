@@ -1,0 +1,18 @@
+1.找到用户API
+	String userId = UserContext.get();
+
+2.异步请求的结果类型
+	resultMap={'success':'flaut','message'='装箱失败'，其他数据}
+
+3.list列表展示页面
+	使用分页组件，true为开启分页，fualt为不开启分页，
+	传递的参数有：pageStart=50, pageSize=50,
+	返回结果：
+		resultMap.put("total",total);//无分页则设为0
+		resultMap.put("rows",allocateOrderList);
+
+4.国际化
+	Messages.getInstance().getMessage("error.all.deliver");
+
+5.数据库字段查找
+SELECT * from information_schema.columns where TABLE_SCHEMA='数据库名' and COLUMN_NAME='字段名'

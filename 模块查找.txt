@@ -1,0 +1,42 @@
+1.分页	
+	*.vm部分
+	分页模板页面
+	所有的index页面
+
+	其他页面
+	查标题
+
+   2)双弹出窗数据注入
+	aukey-cilent 仓库-调拨单-创建调拨单
+	http://localhost:8080/wms/warehouse/allot/order/index
+
+
+
+2.检验
+	<input xname="deliverquantityCheck"/>
+
+	$.each($("input[xname='deliverquantityCheck']"),function(i){
+    	 	$(this).validatebox({
+    		required : true,
+			validType :['positiveInteger','numberRange[1,10000000]']
+    	});
+     });
+	var validate = $('#allocateOrderForm').form("validate");
+	if(!validate){
+		return;
+	}
+	
+3.国际化
+	message?.properties
+	$!i18n.getMessage("export.package")
+
+4.日历插件
+	1.默认初始值由后台提供
+	2.html
+	<input class="easyui-datebox w10" id="createDateFrom" value="$!{createDateFrom}" data-options="onSelect:searchByCreateDate,validType:'date'"  style="width:150px" >
+					到
+	<input class="easyui-datebox w150" id="createDateTo" value="$!{createDateTo}" data-options="onSelect:searchByCreateDate,validType:'date'" style="width:150px">
+	
+	3.script部分存在校验
+
+	

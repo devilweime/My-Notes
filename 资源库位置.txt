@@ -1,0 +1,4 @@
+
+https://192.168.88.202:22443/svn/leaddeal
+
+https://192.168.88.202:22443/svn/wms_new

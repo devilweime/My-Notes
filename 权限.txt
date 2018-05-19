@@ -1,0 +1,10 @@
+@OsgiService
+public class DefaultAuthenticationService implements AuthenticationService{...}
+
+request.getQueryString();
+	?redirecturl=http%3A%2F%2Flocalhost%3A8080%2Fwms%2Foverview
+	
+http://localhost:8080/wms/passport?redirecturl=http%3A%2F%2Flocalhost%3A8080%2Fwms%2Foverview
+
+未登录会有进入拦截onUnauthenticated方法
+登录后则不会进入此方法
