@@ -1,0 +1,4 @@
+HttpURLConnection
+https://www.cnblogs.com/sharpest/p/7831350.html
+http://ip.taobao.com/service/getIpInfo.php?ip=8.9.31.87
+编码问题
